@@ -1,78 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Site em Construção | Fabiana Anzolin</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    body::before {
-      content: "";
-      background: url('background-site-construcao.jpg') no-repeat center center fixed;
-      background-size: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -2;
-    }
-
-    body::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: -1;
-    }
-
-    h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 5px #000;
-    }
-
-    p {
-      font-size: 18px;
-      max-width: 90%;
-      text-shadow: 1px 1px 4px #000;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.7);
-      text-shadow: 1px 1px 3px #000;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabiana Anzolin - Consultoria</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Site em construção</h1>
-  <p>Estamos preparando uma nova experiência para você.<br>
-    Em breve, <strong>www.fabianaanzolin.com.br</strong> estará no ar.
-  </p>
-  <footer>&copy; 2025 Fabiana Anzolin</footer>
+  <header>
+    <h1>Bem-vinda ao site da Fabiana Anzolin</h1>
+    <p>Consultoria em Dados e Performance Comercial</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Transforme sua operação comercial</h2>
+      <p>Com clareza, dados e previsibilidade.</p>
+    </section>
+  </main>
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5541991741076?text=Olá,%20visitei%20seu%20site%20e%20gostaria%20de%20saber%20mais!" 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="Fale conosco no WhatsApp">
+    <img src="assets/whatsapp-icon.svg" alt="WhatsApp" />
+  </a>
 </body>
 </html>
