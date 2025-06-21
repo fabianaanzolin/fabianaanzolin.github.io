@@ -1,22 +1,42 @@
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
   color: #222E50;
 }
 
-header {
+.hero {
   background-color: #222E50;
   color: white;
-  padding: 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
-main {
-  padding: 40px;
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.main-section {
+  padding: 40px 20px;
   text-align: center;
+}
+
+.main-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.main-section p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .whatsapp-float {
