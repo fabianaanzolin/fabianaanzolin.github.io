@@ -1,1 +1,22 @@
-/* Código CSS principal colado pelo usuário */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
