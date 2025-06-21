@@ -1,16 +1,78 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Background com Imagem</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site em Construção | Fabiana Anzolin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      background: url('background-site-construcao.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 90%;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      text-shadow: 1px 1px 3px #000;
+    }
+  </style>
 </head>
 <body>
-  <div class="conteudo">
-    <h1>Bem-vindo ao meu projeto!</h1>
-    <p>Este fundo foi adicionado com CSS e uma imagem local.</p>
-  </div>
+  <h1>Site em construção</h1>
+  <p>Estamos preparando uma nova experiência para você.<br>
+    Em breve, <strong>www.fabianaanzolin.com.br</strong> estará no ar.
+  </p>
+  <footer>&copy; 2025 Fabiana Anzolin</footer>
 </body>
 </html>
