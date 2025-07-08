@@ -1,78 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <title>Fabiana Anzolin – Portfólio</title>
+
+  <!-- Responsividade -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Site em Construção | Fabiana Anzolin</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Portfólio, projetos e publicações de Fabiana Anzolin.">
+  <link rel="canonical" href="https://fabianaanzolin.com.br/">
+
+  <!-- Favicon (opcional) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Estilo enxuto -->
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    body::before {
-      content: "";
-      background: url('background-site-construcao.jpg') no-repeat center center fixed;
-      background-size: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -2;
-    }
-
-    body::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: -1;
-    }
-
-    h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 5px #000;
-    }
-
-    p {
-      font-size: 18px;
-      max-width: 90%;
-      text-shadow: 1px 1px 4px #000;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.7);
-      text-shadow: 1px 1px 3px #000;
-    }
+    html,body{margin:0;height:100%;font-family:system-ui,sans-serif;background:#fdfdfd;}
+    .wrapper{height:100vh;width:100%;display:flex;flex-direction:column}
+    .wrapper iframe{flex:1;border:0;width:100%}
+    .noscript{padding:2rem;text-align:center;color:#444}
   </style>
 </head>
+
 <body>
-  <h1>Site em construção</h1>
-  <p>Estamos preparando uma nova experiência para você.<br>
-    Em breve, <strong>www.fabianaanzolin.com.br</strong> estará no ar.
-  </p>
-  <footer>&copy; 2025 Fabiana Anzolin</footer>
+  <div class="wrapper">
+    <!-- Conteúdo principal vindo do Gamma -->
+    <iframe src="https://gamma.app/embed/ll6z5isq1c1xxmz"
+            title="Transforme sua operação comercial com método e resultados"
+            loading="lazy"
+            allowfullscreen></iframe>
+
+    <!-- Mensagem para navegadores com JavaScript desativado -->
+    <noscript class="noscript">
+      Este site precisa de JavaScript para exibir o portfólio.<br>
+      Ative o JavaScript ou acesse diretamente:
+      <a href="https://gamma.app/docs/ll6z5isq1c1xxmz" target="_blank" rel="noopener">gamma.app/docs/ll6z5isq1c1xxmz</a>.
+    </noscript>
+  </div>
+
+  <!-- Espaço para scripts adicionais (ex.: Analytics) -->
 </body>
 </html>
