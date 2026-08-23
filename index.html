@@ -2,48 +2,146 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
+
   <title>Anzolin Consultoria – Transformando ideias em Soluções Digitais</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Desenvolvemos soluções digitais sob medida para empresas, clubes e associações.">
+  <meta
+    name="description"
+    content="Desenvolvemos soluções digitais sob medida para empresas, clubes e associações."
+  >
 
-  <link rel="canonical" href="https://www.anzolinconsultoria.com.br/">
+  <link
+    rel="canonical"
+    href="https://www.anzolinconsultoria.com.br/"
+  >
 
   <style>
-    html, body {
+    html,
+    body {
       margin: 0;
+      padding: 0;
       height: 100%;
       width: 100%;
       overflow: hidden;
       font-family: system-ui, sans-serif;
+      background: #ffffff;
     }
 
     iframe {
+      display: block;
       border: none;
       width: 100%;
       height: 100vh;
     }
   </style>
+
+  <script>
+    (function () {
+
+      /*
+       * Recupera uma rota salva pelo 404.html.
+       *
+       * Exemplo:
+       * /indicacao
+       * /i/ABC123
+       * /admin/indicacao
+       */
+
+      var savedPath = sessionStorage.getItem('anzolinRedirectPath');
+
+      if (savedPath) {
+        sessionStorage.removeItem('anzolinRedirectPath');
+
+        /*
+         * Atualiza novamente a URL exibida no navegador
+         * sem recarregar a página.
+         */
+        history.replaceState(null, '', savedPath);
+      }
+
+    })();
+  </script>
 </head>
 
 <body>
 
   <iframe
-    src="https://anzolin-digital-craft.lovable.app/"
+    id="anzolin-app"
     title="Anzolin Consultoria"
     loading="eager"
     allowfullscreen>
   </iframe>
 
+  <script>
+    (function () {
+
+      var lovableBase =
+        'https://anzolin-digital-craft.lovable.app';
+
+      /*
+       * Obtém a rota atual do domínio da Anzolin.
+       *
+       * Exemplos:
+       *
+       * https://www.anzolinconsultoria.com.br/
+       * -> /
+       *
+       * https://www.anzolinconsultoria.com.br/indicacao
+       * -> /indicacao
+       *
+       * https://www.anzolinconsultoria.com.br/i/ABC123
+       * -> /i/ABC123
+       */
+
+      var path = window.location.pathname || '/';
+      var search = window.location.search || '';
+      var hash = window.location.hash || '';
+
+      /*
+       * Evita problemas caso a rota não comece com "/".
+       */
+      if (path.charAt(0) !== '/') {
+        path = '/' + path;
+      }
+
+      /*
+       * Monta a URL correspondente dentro do Lovable.
+       */
+      var lovableUrl =
+        lovableBase +
+        path +
+        search +
+        hash;
+
+      /*
+       * Carrega a rota correta dentro do iframe.
+       */
+      document.getElementById('anzolin-app').src =
+        lovableUrl;
+
+    })();
+  </script>
+
   <noscript>
-    Este site requer JavaScript para funcionar corretamente.<br><br>
 
-    Caso não seja exibido, acesse diretamente:<br>
+    Este site requer JavaScript para funcionar corretamente.
 
-    <a href="https://anzolin-digital-craft.lovable.app/" target="_blank">
-      https://anzolin-digital-craft.lovable.app/
+    <br><br>
+
+    Caso não seja exibido, acesse diretamente:
+
+    <br>
+
+    <a
+      href="https://anzolin-digital-craft.lovable.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Anzolin Consultoria
     </a>
+
   </noscript>
 
 </body>
