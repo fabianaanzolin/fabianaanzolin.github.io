@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+Disallow: /admin/
+Disallow: /i/
+Disallow: /meu-ranking/
+
 Sitemap: https://www.anzolinconsultoria.com.br/sitemap.xml
