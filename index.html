@@ -3,19 +3,142 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Anzolin Consultoria – Transformando ideias em Soluções Digitais</title>
+  <title>Anzolin Consultoria | Soluções Digitais em Curitiba</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta
     name="description"
-    content="Desenvolvemos soluções digitais sob medida para empresas, clubes e associações."
+    content="Sistemas personalizados, automações, sites e soluções digitais sob medida para simplificar a gestão e o dia a dia de empresas e organizações."
   >
 
   <link
     rel="canonical"
     href="https://www.anzolinconsultoria.com.br/"
   >
+
+  <!-- Favicon e identidade -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Anzolin Consultoria">
+  <meta property="og:title" content="Anzolin Consultoria | Soluções Digitais em Curitiba">
+  <meta
+    property="og:description"
+    content="Sistemas personalizados, automações, sites e soluções digitais sob medida para empresas e organizações."
+  >
+  <meta property="og:url" content="https://www.anzolinconsultoria.com.br/">
+
+  <!-- Twitter / compartilhamento -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Anzolin Consultoria | Soluções Digitais em Curitiba">
+  <meta
+    name="twitter:description"
+    content="Sistemas personalizados, automações, sites e soluções digitais sob medida para empresas e organizações."
+  >
+
+  <!-- Dados estruturados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.anzolinconsultoria.com.br/#organization",
+        "name": "Anzolin Consultoria",
+        "alternateName": "Anzolin",
+        "url": "https://www.anzolinconsultoria.com.br/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.anzolinconsultoria.com.br/logo-oficial.png"
+        },
+        "description": "A Anzolin Consultoria desenvolve sistemas personalizados, automações, sites e soluções digitais sob medida para simplificar a gestão e o dia a dia de empresas e organizações.",
+        "email": "contato@anzolinconsultoria.com.br",
+        "telephone": "+5541991741076",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Curitiba",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Curitiba"
+          },
+          {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/anzolinconsultoria/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.anzolinconsultoria.com.br/#website",
+        "url": "https://www.anzolinconsultoria.com.br/",
+        "name": "Anzolin Consultoria",
+        "publisher": {
+          "@id": "https://www.anzolinconsultoria.com.br/#organization"
+        },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.anzolinconsultoria.com.br/#webpage",
+        "url": "https://www.anzolinconsultoria.com.br/",
+        "name": "Anzolin Consultoria | Soluções Digitais em Curitiba",
+        "isPartOf": {
+          "@id": "https://www.anzolinconsultoria.com.br/#website"
+        },
+        "about": {
+          "@id": "https://www.anzolinconsultoria.com.br/#organization"
+        },
+        "description": "Sistemas personalizados, automações, sites e soluções digitais sob medida para simplificar a gestão e o dia a dia de empresas e organizações.",
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "Service",
+        "name": "Sistemas personalizados",
+        "provider": {
+          "@id": "https://www.anzolinconsultoria.com.br/#organization"
+        },
+        "description": "Desenvolvimento de sistemas digitais personalizados de acordo com as necessidades de empresas e organizações."
+      },
+      {
+        "@type": "Service",
+        "name": "Automação",
+        "provider": {
+          "@id": "https://www.anzolinconsultoria.com.br/#organization"
+        },
+        "description": "Soluções digitais para reduzir atividades manuais, organizar informações e simplificar operações."
+      },
+      {
+        "@type": "Service",
+        "name": "Criação de sites",
+        "provider": {
+          "@id": "https://www.anzolinconsultoria.com.br/#organization"
+        },
+        "description": "Desenvolvimento de sites profissionais para empresas e organizações."
+      },
+      {
+        "@type": "Service",
+        "name": "Soluções digitais sob medida",
+        "provider": {
+          "@id": "https://www.anzolinconsultoria.com.br/#organization"
+        },
+        "description": "Desenvolvimento de soluções digitais para necessidades específicas de empresas e organizações."
+      }
+    ]
+  }
+  </script>
 
   <style>
     html,
@@ -35,37 +158,42 @@
       width: 100%;
       height: 100vh;
     }
+
+    .seo-content {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
   </style>
 
   <script>
     (function () {
-
-      /*
-       * Recupera uma rota salva pelo 404.html.
-       *
-       * Exemplo:
-       * /indicacao
-       * /i/ABC123
-       * /admin/indicacao
-       */
-
       var savedPath = sessionStorage.getItem('anzolinRedirectPath');
 
       if (savedPath) {
         sessionStorage.removeItem('anzolinRedirectPath');
-
-        /*
-         * Atualiza novamente a URL exibida no navegador
-         * sem recarregar a página.
-         */
         history.replaceState(null, '', savedPath);
       }
-
     })();
   </script>
 </head>
 
 <body>
+
+  <div class="seo-content">
+    <h1>Transformamos ideias em soluções digitais.</h1>
+    <p>
+      A Anzolin Consultoria desenvolve sistemas personalizados,
+      automações, sites e soluções digitais sob medida para empresas
+      e organizações em Curitiba e também com atendimento remoto.
+    </p>
+  </div>
 
   <iframe
     id="anzolin-app"
@@ -80,44 +208,20 @@
       var lovableBase =
         'https://anzolinconsultoria.lovable.app/';
 
-      /*
-       * Obtém a rota atual do domínio da Anzolin.
-       *
-       * Exemplos:
-       *
-       * https://www.anzolinconsultoria.com.br/
-       * -> /
-       *
-       * https://www.anzolinconsultoria.com.br/indicacao
-       * -> /indicacao
-       *
-       * https://www.anzolinconsultoria.com.br/i/ABC123
-       * -> /i/ABC123
-       */
-
       var path = window.location.pathname || '/';
       var search = window.location.search || '';
       var hash = window.location.hash || '';
 
-      /*
-       * Evita problemas caso a rota não comece com "/".
-       */
       if (path.charAt(0) !== '/') {
         path = '/' + path;
       }
 
-      /*
-       * Monta a URL correspondente dentro do Lovable.
-       */
       var lovableUrl =
         lovableBase +
         path +
         search +
         hash;
 
-      /*
-       * Carrega a rota correta dentro do iframe.
-       */
       document.getElementById('anzolin-app').src =
         lovableUrl;
 
@@ -125,23 +229,23 @@
   </script>
 
   <noscript>
+    <h1>Anzolin Consultoria</h1>
 
-    Este site requer JavaScript para funcionar corretamente.
+    <p>
+      A Anzolin Consultoria desenvolve sistemas personalizados,
+      automações, sites e soluções digitais sob medida para empresas
+      e organizações.
+    </p>
 
-    <br><br>
-
-    Caso não seja exibido, acesse diretamente:
-
-    <br>
-
-    <a
-      href="https://anzolinconsultoria.lovable.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Anzolin Consultoria
-    </a>
-
+    <p>
+      <a
+        href="https://anzolinconsultoria.lovable.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Acessar Anzolin Consultoria
+      </a>
+    </p>
   </noscript>
 
 </body>
